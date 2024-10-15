@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+int n,rev,temp=0;
+printf("enter the n value:");
+scanf("%d",&n);
+for(int i=0;n>0;i++)
+{
+ rev=n%10;   
+ n=n/10;
+ temp=temp*10+rev;
+ }
+ printf("the number of digits are %d",temp);
+ }
