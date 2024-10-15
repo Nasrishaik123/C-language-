@@ -10,5 +10,5 @@ for(int i=0;n>0;i++)
  n=n/10;
  temp=temp*10+rev;
  }
- printf("the number of digits are %d",temp);
+ printf("the reverse of the number is %d",temp);
  }
