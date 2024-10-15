@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+ int x[100],i,n,big=0;
+ printf("enter the size of an array");
+ scanf("%d",&n);
+ for(i=0;i<n;i++)
+ {
+     printf("enter the element");
+     scanf("%d",&x[i]);
+ }
+ for(i=0;i<n;i++)
+ {
+     if(big<x[i])
+     {
+     big=x[i];
+     
+ }
+ }
+printf("biggest element is %d\n",big);
+}
