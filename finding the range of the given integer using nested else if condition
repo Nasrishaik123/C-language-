@@ -1,0 +1,27 @@
+#include <stdio.h>
+void main()
+{
+  int n;
+  printf("enter a positive integer");
+  scanf("%d",&n);
+  if(n>=1&&n<=10)
+  {
+      printf("the integer in the range of 1 to 10");
+  }
+   else if(n>10&&n<=20)
+  {
+      printf("the integer in the range of 11 to 20");
+  }
+  else if(n>20&&n<=30)
+  {
+      printf("the integer in the range of 21 to 30");
+  }
+  else if(n>30&&n<=40)
+  {
+      printf("the integer in the range of 31 to 40");
+  }
+  else
+  {
+      printf("the integer is greater than 40");
+  }
+}
