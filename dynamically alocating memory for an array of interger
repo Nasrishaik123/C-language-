@@ -1,0 +1,22 @@
+#include<stdio.h>
+int  *allocateArray(int size);
+int main() {
+    int size = 5;
+    int* array = allocateArray(size);
+    for (int i = 0; i < size; i++) {
+        printf("Enter value for index %d: ", i);
+        scanf("%d", &array[i]);
+    }
+    printf("Array values: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+    free(array);
+    return 0;
+}
+  int  *allocateArray(int size)
+   {
+    int *a=(int*)malloc(sizeof(int)*size);
+    return a;
+}
