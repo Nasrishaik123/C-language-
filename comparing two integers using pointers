@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main() {
+    int x = 5, y = 10;
+    int result = compare(&x, &y);
+    printf("Result: %d\n", result);
+    return 0;
+}
+int compare(int* a, int* b)
+{
+ if(*a==*b)
+ {
+  return 0;
+ }
+ else if(*a>*b)
+ {
+  return 1;
+ }
+ else
+ {
+   return -1;
+ }
+}
+
+
+
