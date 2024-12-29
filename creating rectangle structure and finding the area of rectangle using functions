@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct rectangle
+{
+    float length;
+    float width;
+};
+int calculatearea(struct rectangle r1);
+int main()
+{
+    struct rectangle r1;
+    float res;
+    printf("enter length of rectangle:");
+    scanf("%f",&r1.length);
+     printf("enter width of rectangle:");
+    scanf("%f",&r1.width);
+    res=calculatearea(r1);
+    printf("\n area of rectangle is %f",res);
+
+}
+int calculatearea(struct rectangle r1)
+{
+    return(r1.length*r1.width);
+}
