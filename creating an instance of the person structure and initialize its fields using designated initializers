@@ -1,0 +1,18 @@
+#include<stdio.h>
+struct person
+{
+ int age;
+ char name[20];
+ char address[30];
+};
+int main()
+{
+struct person p1;
+p1.age=19;
+strcpy(p1.name,"nasri");
+strcpy(p1.address,"thochalaka");
+printf("the age is %d",p1.age);
+printf("\n the name is %s",p1.name);
+printf("\n the address is %s",p1.address);
+return 0;
+}
